@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Airspace Home Page (Reconstruction)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="airspace-homepage.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header" id="top">
+      <div class="nav-bar" data-open="false">
+        <div class="section-inner nav-top">
+          <a class="logo" href="#top" aria-label="Airspace home">
+            <img class="logo-img" src="assets/airspace-logo.png" alt="Airspace" />
+          </a>
+          <button class="nav-menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+            <span class="nav-menu-icon" aria-hidden="true"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <nav class="main-nav" id="primary-nav" aria-label="Primary">
+            <a class="nav-link" href="#solutions" data-section="solutions">Solutions</a>
+            <a class="nav-link" href="#platform" data-section="platform">Platform</a>
+            <div class="nav-item has-panel">
+              <a class="nav-link nav-link--has-panel" href="#company" data-section="company careers contact" aria-expanded="false" aria-controls="nav-panel-company">
+                Company
+                <span class="nav-link-chevron" aria-hidden="true"></span>
+              </a>
+              <div class="nav-panel" id="nav-panel-company">
+                <span class="nav-panel-title">Company</span>
+                <a href="#company">
+                  <strong>Who we are</strong>
+                  <span>Inside the team and mission</span>
+                </a>
+                <a href="#careers">
+                  <strong>Careers</strong>
+                  <span>Join the operations network</span>
+                </a>
+                <a href="#contact">
+                  <strong>Contact us</strong>
+                  <span>Talk to the Airspace team</span>
+                </a>
+              </div>
+            </div>
+            <div class="nav-item has-panel">
+              <a class="nav-link nav-link--has-panel" href="#features" data-section="features stats" aria-expanded="false" aria-controls="nav-panel-learn">
+                Learn
+                <span class="nav-link-chevron" aria-hidden="true"></span>
+              </a>
+              <div class="nav-panel" id="nav-panel-learn">
+                <span class="nav-panel-title">Learn</span>
+                <a href="#features">
+                  <strong>Platform Guides</strong>
+                  <span>How to get more from Airspace</span>
+                </a>
+                <a href="#stats">
+                  <strong>Emissions</strong>
+                  <span>Visibility into environmental impact</span>
+                </a>
+              </div>
+            </div>
+            <a class="nav-link" href="#">Drive with us</a>
+            <a class="nav-link" href="#">Track your shipment</a>
+          </nav>
+          <div class="nav-cta">
+            <button class="btn btn-ghost">Client Login</button>
+            <button class="btn btn-primary">Start Shipping</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-area">
+        <div
+          class="hero-network"
+          data-hero-center-x="0.78"
+          data-hero-center-y="0.5"
+          data-hero-fill="0.98"
+          data-hero-fps="60"
+          data-hero-sparks="100"
+          aria-hidden="true"
+        >
+          <div class="mesh-vignette" aria-hidden="true"></div>
+          <svg
+            class="hero-line-svg"
+            viewBox="0 0 1200 800"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden="true"
+          >
+            <g class="mesh-group"></g>
+            <g class="spark-group"></g>
+          </svg>
+        </div>
+        <div class="section-inner hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">UNLOCK EFFICIENCY</p>
+            <h1>Time-critical shipping made smarter</h1>
+            <p class="lead">
+              Experience the future of time-critical logistics: Tailored solutions, AI-powered routing &amp;
+              dispatching, and real-time insights all-in-one.
+            </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Request a Demo</button>
+            <a class="btn btn-text" href="#">Learn More</a>
+          </div>
+          <div class="hero-social">
+            <span class="callout-title">Capabilities</span>
+            <div class="callout-list">
+              <span class="callout-item">Instant quoting</span>
+              <span class="callout-item">AI dispatch</span>
+              <span class="callout-item">Proactive visibility</span>
+            </div>
+          </div>
+          </div>
+          <div class="hero-visual">
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="section services" id="solutions" data-nav-section>
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Covering all your time-critical needs</p>
+            <h2>Covering all your time-critical needs</h2>
+            <p>
+              From next flight out to specialty services, every shipment is routed for speed and
+              certainty.
+            </p>
+          </div>
+          <button class="btn btn-ghost">Learn More</button>
+        </div>
+
+        <div class="service-list">
+          <article class="service">
+            <div class="service-copy">
+              <h3>Next flight out</h3>
+              <p>
+                Domestic or International Next Flight Out (NFO) service selects optimized flights and
+                proactively focuses on delay resolution for maximum efficiency and fast shipping, powered
+                by our patented routing and auto-booking technology.
+              </p>
+            </div>
+            <div
+              class="canvas service-canvas"
+              data-scene="nfo"
+              role="img"
+              aria-label="Warm gradient runway vectors with pulsing beacons and a takeoff arc."
+            >
+              <canvas class="scene"></canvas>
+            </div>
+          </article>
+
+          <article class="service service--reverse">
+            <div class="service-copy">
+              <h3>On-demand ground</h3>
+              <p>
+                Our AI powered tools sift through millions of options in less than a second, recommending
+                the best route based on your preferences, pricing, and speed needs.
+              </p>
+            </div>
+            <div
+              class="canvas service-canvas"
+              data-scene="ground"
+              role="img"
+              aria-label="Driver selection field with a pink package node, fading driver dots, and a selected driver darting to an orange target."
+            >
+              <canvas class="scene"></canvas>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service-copy">
+              <h3>Charter</h3>
+              <p>Our global reach allows us to handle charter services when your business calls for it.</p>
+            </div>
+            <div
+              class="canvas service-canvas"
+              data-scene="charter"
+              role="img"
+              aria-label="Premium charter reliability rings and a metallic signal band."
+            >
+              <canvas class="scene"></canvas>
+            </div>
+          </article>
+
+          <article class="service service--reverse">
+            <div class="service-copy">
+              <h3>Specialty services</h3>
+              <p>
+                Covering a range of specialty services from freight, to STAT ground, to on-board carry,
+                Airspace is well versed in a variety of special needs your company may have.
+              </p>
+            </div>
+            <div
+              class="canvas service-canvas"
+              data-scene="specialty"
+              role="img"
+              aria-label="Freight capacity dot grid confirming or rejecting availability before exiting."
+            >
+              <canvas class="scene"></canvas>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section platform" id="platform" data-nav-section>
+      <div class="section-inner platform-grid">
+        <div>
+          <p class="eyebrow">A faster, smarter way to ship</p>
+          <h2>A faster, smarter way to ship</h2>
+          <p>
+            Make your complex shipping operations faster and more effective than ever with the platform
+            that keeps your team in control and in-the-loop.
+          </p>
+          <button class="btn btn-primary">See the Platform</button>
+        </div>
+        <div class="platform-detail">
+          <div class="detail-row">
+            <span>Pickup</span>
+            <strong>May 19, 2023 · 03:15 PST</strong>
+          </div>
+          <div class="detail-row">
+            <span>Delivery</span>
+            <strong>May 19, 2023 · 15:00 EST</strong>
+          </div>
+          <div class="detail-row">
+            <span>Status</span>
+            <strong>Driver available 5 mins from pickup</strong>
+          </div>
+          <div class="detail-row">
+            <span>Routing</span>
+            <strong>Automated delay detection engaged</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features" data-nav-section>
+      <div class="section-inner">
+        <div class="feature-row">
+          <div class="feature-copy">
+            <p class="eyebrow">UNRIVALED SPEED</p>
+            <h3>Get your packages there faster</h3>
+            <p>
+              Faster shipping with instant quoting on shipments up to 10,000 lbs, automated dispatching,
+              industry-leading speed to delivery, and automated delay detection.
+            </p>
+          </div>
+          <div class="canvas feature-canvas" data-scene="speed" role="img" aria-label="Status card that flips through order milestones with coordinated dot-field animations.">
+            <canvas class="scene"></canvas>
+            <div class="overlay overlay--speed" aria-hidden="true">
+              <div class="card-shell">
+                <div class="card">
+                  <p class="card-title">Placing Order</p>
+                  <p class="card-body">Optimizing Route</p>
+                  <span class="card-meta">Generating Quote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-copy">
+            <p class="eyebrow">NEXT-LEVEL PRECISION</p>
+            <h3>Know what to expect</h3>
+            <p>
+              Keep your team and your customers in-the-loop with precise pickup and delivery times
+              available at the time of quote, and automated delay notifications.
+            </p>
+          </div>
+          <div class="canvas feature-canvas" data-scene="precision" role="img" aria-label="Precision timing graphic with ticks and predictive path.">
+            <canvas class="scene"></canvas>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-copy">
+            <p class="eyebrow">REAL-TIME VISIBILITY</p>
+            <h3>Up-to-the-second tracking</h3>
+            <p>
+              Know the state of your package at all times and get notified your way. With the Airspace
+              platform you get real-time end-to-end shipment tracking, a shareable tracking link,
+              proactive communications, and even shock, temp and humidity monitoring.
+            </p>
+          </div>
+          <div class="canvas feature-canvas" data-scene="visibility" role="img" aria-label="Time-stamped echo pulses with rapid update cards.">
+            <canvas class="scene"></canvas>
+            <div class="overlay overlay--visibility" aria-hidden="true">
+              <div class="card-stack"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-copy">
+            <p class="eyebrow">EXCEPTIONAL CONTROL</p>
+            <h3>Tailor your service and requirements</h3>
+            <p>
+              Flexible routing options, personalized preferences, and automated SOPs mean Airspace can
+              accommodate the complex needs of your organization.
+            </p>
+          </div>
+          <div class="canvas feature-canvas" data-scene="control" role="img" aria-label="Control center tiles and routing decisions.">
+            <canvas class="scene"></canvas>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-copy">
+            <p class="eyebrow">RECAPTURED SAVINGS</p>
+            <h3>Reduce effort and delays</h3>
+            <p>
+              Get orders live and routed faster to save nearly an hour of team time per shipment.
+              Intelligently avoid delays and get projects back on schedule.
+            </p>
+          </div>
+          <div class="canvas feature-canvas" data-scene="savings" role="img" aria-label="Abstract cost lines that settle into a smooth downward savings curve.">
+            <canvas class="scene"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats" id="stats" data-nav-section>
+      <div class="section-inner stats-grid">
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="11"></circle>
+              <path d="M16 10v6l4 2.5"></path>
+            </svg>
+          </div>
+          <span class="stat-value">99%</span>
+          <p class="stat-label">ON-TIME DELIVERY RATE</p>
+          <small class="stat-detail">99.8% on-time across all shipments</small>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 5l8 3v6c0 6-4 10-8 12-4-2-8-6-8-12V8l8-3z"></path>
+              <path d="M12 16l3 3 5-5"></path>
+            </svg>
+          </div>
+          <span class="stat-value">80%</span>
+          <p class="stat-label">FEWER ERRORS</p>
+          <small class="stat-detail">80% fewer controllable delays</small>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 16h14"></path>
+              <path d="M17 10l6 6-6 6"></path>
+              <path d="M7 11h6"></path>
+              <path d="M7 21h6"></path>
+            </svg>
+          </div>
+          <span class="stat-value">90 mins.</span>
+          <p class="stat-label">FASTER ARRIVAL</p>
+          <small class="stat-detail">Customers save about 90 mins. per NFO shipment</small>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 16a10 10 0 0 1 20 0"></path>
+              <rect x="4.5" y="16" width="4" height="8" rx="2"></rect>
+              <rect x="23.5" y="16" width="4" height="8" rx="2"></rect>
+              <path d="M20 24h-4"></path>
+            </svg>
+          </div>
+          <span class="stat-value">45 mins.</span>
+          <p class="stat-label">OPS TIME SAVED</p>
+          <small class="stat-detail">Your operations teams save 45 mins. on the phone per order</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" id="company" data-nav-section>
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Trusted by leaders in your industry</p>
+            <h2>Trusted by leaders in your industry</h2>
+            <p>
+              Every day, Airspace handles thousands of shipments for top companies across industries
+              including aerospace, healthcare, life sciences, high-tech, and automotive &amp; manufacturing.
+            </p>
+            <button class="btn btn-primary">Learn About Our Solutions →</button>
+          </div>
+        </div>
+        <div class="logo-marquee" aria-label="Customer logos">
+          <div class="logo-marquee-track">
+            <div class="logo-row">
+              <img
+                src="assets/logos/frontier-airlines.jpg"
+                alt="Frontier Airlines logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/logos/american-red-cross.jpg"
+                alt="American Red Cross logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/logos/labcorp.jpg"
+                alt="LabCorp logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/logos/quest-diagnostics.jpg"
+                alt="Quest Diagnostics logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/logos/donor-network-west.jpg"
+                alt="Donor Network West logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="assets/logos/southwest-transplant-alliance.jpg"
+                alt="Southwest Transplant Alliance logo"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="logo-row" aria-hidden="true">
+              <img src="assets/logos/frontier-airlines.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/logos/american-red-cross.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/logos/labcorp.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/logos/quest-diagnostics.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/logos/donor-network-west.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="assets/logos/southwest-transplant-alliance.jpg" alt="" loading="lazy" decoding="async" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team" id="careers" data-nav-section>
+      <div class="section-inner team-grid">
+        <div>
+          <p class="eyebrow">One team, platform and network, focused on you</p>
+          <h2>One team, platform and network, focused on you</h2>
+          <p>
+            Our team of logistics experts constantly monitors real-time data from our global network of
+            drivers, agents, and airlines to proactively solve challenges and keep you informed.
+          </p>
+          <button class="btn btn-ghost">Learn about the team →</button>
+        </div>
+        <div class="team-panel">
+          <div class="ops-siri">
+            <div class="ops-siri-labels">
+              <span class="ops-siri-label">Ops is listening</span>
+            </div>
+            <div class="ops-siri-visual" aria-hidden="true">
+              <svg class="ops-siri-svg" viewBox="0 0 600 90" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="opsWaveA" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#5fe3ff" stop-opacity="0.8" />
+                    <stop offset="55%" stop-color="#5a8bff" stop-opacity="0.65" />
+                    <stop offset="100%" stop-color="#7bd7ff" stop-opacity="0.55" />
+                  </linearGradient>
+                  <linearGradient id="opsWaveB" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#ff86d2" stop-opacity="0.7" />
+                    <stop offset="50%" stop-color="#b56bff" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#ff7fb2" stop-opacity="0.5" />
+                  </linearGradient>
+                  <linearGradient id="opsWaveC" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#57f6b2" stop-opacity="0.55" />
+                    <stop offset="50%" stop-color="#3cc6ff" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#5fe3ff" stop-opacity="0.45" />
+                  </linearGradient>
+                </defs>
+                <g class="ops-siri-layer wave-a">
+                  <path
+                    class="ops-siri-wave wave-a"
+                    d="M0 45 C 30 45 45 22 75 22 C 105 22 120 45 150 45 C 180 45 195 14 225 14 C 255 14 270 45 300 45 C 330 45 345 18 375 18 C 405 18 420 45 450 45 C 480 45 495 24 525 24 C 555 24 570 45 600 45 L600 45 C 570 45 555 66 525 66 C 495 66 480 45 450 45 C 420 45 405 72 375 72 C 345 72 330 45 300 45 C 270 45 255 76 225 76 C 195 76 180 45 150 45 C 120 45 105 68 75 68 C 45 68 30 45 0 45 Z"
+                    fill="url(#opsWaveA)"
+                  />
+                </g>
+                <g class="ops-siri-layer wave-b">
+                  <path
+                    class="ops-siri-wave wave-b"
+                    d="M0 45 C 30 45 45 24 75 24 C 105 24 120 45 150 45 C 180 45 195 18 225 18 C 255 18 270 45 300 45 C 330 45 345 20 375 20 C 405 20 420 45 450 45 C 480 45 495 26 525 26 C 555 26 570 45 600 45 L600 45 C 570 45 555 64 525 64 C 495 64 480 45 450 45 C 420 45 405 70 375 70 C 345 70 330 45 300 45 C 270 45 255 72 225 72 C 195 72 180 45 150 45 C 120 45 105 66 75 66 C 45 66 30 45 0 45 Z"
+                    fill="url(#opsWaveB)"
+                  />
+                </g>
+                <g class="ops-siri-layer wave-c">
+                  <path
+                    class="ops-siri-wave wave-c"
+                    d="M0 45 C 30 45 45 26 75 26 C 105 26 120 45 150 45 C 180 45 195 20 225 20 C 255 20 270 45 300 45 C 330 45 345 22 375 22 C 405 22 420 45 450 45 C 480 45 495 28 525 28 C 555 28 570 45 600 45 L600 45 C 570 45 555 62 525 62 C 495 62 480 45 450 45 C 420 45 405 68 375 68 C 345 68 330 45 300 45 C 270 45 255 70 225 70 C 195 70 180 45 150 45 C 120 45 105 64 75 64 C 45 64 30 45 0 45 Z"
+                    fill="url(#opsWaveC)"
+                  />
+                </g>
+                <g class="ops-siri-layer wave-d">
+                  <path
+                    class="ops-siri-wave wave-d"
+                    d="M0 45 C 30 45 45 28 75 28 C 105 28 120 45 150 45 C 180 45 195 22 225 22 C 255 22 270 45 300 45 C 330 45 345 24 375 24 C 405 24 420 45 450 45 C 480 45 495 30 525 30 C 555 30 570 45 600 45 L600 45 C 570 45 555 60 525 60 C 495 60 480 45 450 45 C 420 45 405 66 375 66 C 345 66 330 45 300 45 C 270 45 255 68 225 68 C 195 68 180 45 150 45 C 120 45 105 62 75 62 C 45 62 30 45 0 45 Z"
+                    fill="url(#opsWaveA)"
+                  />
+                </g>
+                <g class="ops-siri-layer wave-e">
+                  <path
+                    class="ops-siri-wave wave-e"
+                    d="M0 45 C 30 45 45 30 75 30 C 105 30 120 45 150 45 C 180 45 195 24 225 24 C 255 24 270 45 300 45 C 330 45 345 26 375 26 C 405 26 420 45 450 45 C 480 45 495 32 525 32 C 555 32 570 45 600 45 L600 45 C 570 45 555 58 525 58 C 495 58 480 45 450 45 C 420 45 405 64 375 64 C 345 64 330 45 300 45 C 270 45 255 66 225 66 C 195 66 180 45 150 45 C 120 45 105 60 75 60 C 45 60 30 45 0 45 Z"
+                    fill="url(#opsWaveB)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <p>Global operations desk online</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials" data-nav-section>
+      <div class="section-inner testimonial-grid">
+        <article>
+          <p class="quote">
+            “We appreciate how focused the team was on our shipments to Dublin. Very successful. We are
+            really impressed with the tracking &amp; service.”
+          </p>
+          <div class="quote-meta">
+            <p class="author">Order Coordinator</p>
+            <span>Leading Integrated Device Manufacturer</span>
+          </div>
+        </article>
+        <article>
+          <p class="quote">
+            “Machine learning solves two of the biggest problems in time-critical shipping: routing and
+            dispatch. If you’re not using machine learning as an international freight forwarder, you’re
+            not finding a true optimum in terms of path.”
+          </p>
+          <div class="quote-meta">
+            <p class="author">Ryan Rusnak</p>
+            <span>Chief Technology Officer, Airspace</span>
+          </div>
+        </article>
+        <article>
+          <p class="quote">
+            “We value the transparency, visibility, and proactive communication. We believe Airspace will
+            always go the extra mile for our shipments”
+          </p>
+          <div class="quote-meta">
+            <p class="author">Logistics Director</p>
+            <span>Medical Devices Manufacturer</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact" data-nav-section>
+      <div class="section-inner cta-inner">
+        <div>
+          <p class="eyebrow">UNMATCHED SPEED, TOTAL TRANSPARENCY</p>
+          <h2>Experience the difference</h2>
+          <p>
+            Get a demo to see how Airspace can improve your time-critical logistics and reduce supply
+            chain bottlenecks.
+          </p>
+        </div>
+        <button class="btn btn-primary">Start Shipping</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="section-inner">
+        <div class="footer-top">
+          <div>
+            <h3>Ready to move?</h3>
+            <p>Request a demo or start shipping today.</p>
+          </div>
+          <div class="footer-actions">
+            <button class="btn btn-ghost">Request a Demo</button>
+            <button class="btn btn-primary">Start Shipping</button>
+          </div>
+        </div>
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">Explore</p>
+            <a href="#solutions">Solutions</a>
+            <a href="#platform">Platform</a>
+            <a href="#company">Company</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact us</a>
+            <a href="#features">Platform Guides</a>
+            <a href="#stats">Emissions</a>
+            <a href="#">Drive with us</a>
+            <a href="#">Track your shipment</a>
+          </div>
+          <div>
+            <p class="footer-title">Developers</p>
+            <a href="#">API Documentation</a>
+          </div>
+          <div>
+            <p class="footer-title">Policies</p>
+            <a href="#">Privacy policy</a>
+            <a href="#">Driver privacy policy</a>
+            <a href="#">Cookies policy</a>
+          </div>
+          <div>
+            <p class="footer-title">Follow</p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Airspace</div>
+      </div>
+    </footer>
+  </div>
+
+  <script defer src="nav.js"></script>
+  <script defer src="illustrations-lab.js"></script>
+  <script defer src="hero-line-network-svg.js"></script>
+</body>
+</html>
